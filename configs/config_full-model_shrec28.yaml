@@ -1,0 +1,29 @@
+EXPERIMENT_NAME: 'shrec28_full-model'
+INPUT:
+  NUM_WORKERS: 8
+MODEL:
+  FUSION_TYPE: 'early_fusion'
+  INPUT_COMBINATION: 'local_global'
+  LOCAL_BACKBONE: 'dgcnn'
+  LOCAL_EMBED: 512
+  GLOBAL_BACKBONE: 'bps'
+  GLOBAL_EMBED: 1024
+  NUM_CLASSES: 28
+  BPS_DENSENET:
+    NUM_BPS_POINTS: 256
+    RANDOM_SEED: 21
+DATASETS:
+  NAME: 'shrec17'
+  FILE_LIST_TRAIN: 'train_gestures.txt'
+  FILE_LIST_VAL: 'test_gestures.txt'
+  FILE_LIST_TEST: 'test_gestures.txt'
+  SHREC:
+    PROCESS_FOLDER: 'dbscanCluster_numPts=512'
+SOLVER:
+  BASE_LR: 0.0001
+  WEIGHT_DECAY: 0.005
+  BATCH_SIZE_TRAIN: 8
+  BATCH_SIZE_TEST: 8
+  NUM_EPOCHS: 100
+  LR_MILESTONES: [50, 80, 90]
+  WEIGHT_NOISE: 0.02
