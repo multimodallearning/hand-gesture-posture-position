@@ -1,5 +1,5 @@
-# hand-gesture-position-posture
-Source code for our 3DV 2021 submission, entitled "Fusing Posture and Position Representations for Point Cloud-based Hand Gesture Recognition"
+# hand-gesture-posture-position
+Source code for our 3DV 2021 paper, entitled "Fusing Posture and Position Representations for Point Cloud-based Hand Gesture Recognition"
 
 ## Dependencies
 Please first install the following dependencies
@@ -26,7 +26,7 @@ Please first install the following dependencies
 
 ## Testing
 * If you trained a model yourself following the instructions above, you can test the model by executing `python test.py --config-file "../configs/config_full-model_shrec*.yaml" --gpu GPU`. The output comprises recognition accuracy, number of model parameters and inference time averaged over all batches.
-* Otherwise, we provide pre-trained models for Shrec 14G protocol (http://www.filedropper.com/full-modelshrec14) and for Shrec 28G protocol (http://www.filedropper.com/full-modelshrec28). Download the models and use them for inference by executing `python test.py --config-file "../configs/config_full-model_shrec*.yaml" --gpu GPU --model-path PATH/TO/MODEL`. The provided models achieve 95.24% under the 28G protocol and 96.43% under the 14G protocol.
+* Otherwise, we provide pre-trained models for [Shrec 14G](https://drive.google.com/file/d/1JIpOjM36upTdm-MCvjuOZNnuWKpvKdf3/view?usp=sharing) protocol and for [Shrec 28G](https://drive.google.com/file/d/195_gpv8LYQsdYtPVDMsSFntLyjuZKtjt/view?usp=sharing) protocol. Download the models and use them for inference by executing `python test.py --config-file "../configs/config_full-model_shrec*.yaml" --gpu GPU --model-path PATH/TO/MODEL`. The provided models achieve 95.24% under the 28G protocol and 96.43% under the 14G protocol.
 
 ## Acknowledgements
 * Code for data pre-processing has been adapted from https://github.com/ycmin95/pointlstm-gesture-recognition-pytorch/tree/master/dataset
