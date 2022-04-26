@@ -1,5 +1,5 @@
 # hand-gesture-posture-position
-Source code for our 3DV 2021 paper [Fusing Posture and Position Representations for Point Cloud-based Hand Gesture Recognition](https://ieeexplore.ieee.org/abstract/document/9665889).
+Source code for our 3DV 2021 paper [Fusing Posture and Position Representations for Point Cloud-based Hand Gesture Recognition](https://ieeexplore.ieee.org/abstract/document/9665889) [[pdf](https://csdl-downloads.ieeecomputer.org/proceedings/3dv/2021/2688/00/268800a617.pdf?Expires=1650981378&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jc2RsLWRvd25sb2Fkcy5pZWVlY29tcHV0ZXIub3JnL3Byb2NlZWRpbmdzLzNkdi8yMDIxLzI2ODgvMDAvMjY4ODAwYTYxNy5wZGYiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2NTA5ODEzNzh9fX1dfQ__&Signature=dGJAowaa~BXFUu5aFDd6gNVANrL4o8Fe-bkfwwDriNtftsYpSr0AoBqXQDT0oP16Qth-Obl2X8plKTRoAYlzIhOcUGcTBbs3V0~c2SlCVez4AfxFscMBio0RkshpK89GoBPHO~Ltd1zImCIjVz9tLD1Js9naFpreYbpH26M8zK8arWsmXQ7GaZ0p2bxls2Y2~CmtVGkNSx7qnGRX0sL0ikqMhf9eYZtvzztJld0~scixI4Om9OgOzDE8SXFFuxaTcJppIrKCVHQQ9wIPxsGqjtjqvBR3JDLuMKWCDCW-nSeQybmtL4VyEslqaiBIVHOdkw4M~Klb9dVxRdCIzRQRjQ__&Key-Pair-Id=K12PMWTCQBDMDT)].
 
 ## Dependencies
 Please first install the following dependencies
