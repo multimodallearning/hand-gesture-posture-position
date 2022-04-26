@@ -14,8 +14,7 @@ def test(cfg, model_path):
 
     # prepare test dataset
     test_set = SHREC17Dataset(cfg, phase='test')
-    test_loader = DataLoader(test_set, batch_size=1, num_workers=4, shuffle=False,
-                            drop_last=False)
+    test_loader = DataLoader(test_set, batch_size=1, num_workers=4, shuffle=False, drop_last=False)
 
     # MODEL
     model = TwoStreamLSTM(cfg).to(cfg.MODEL.DEVICE)
@@ -102,14 +101,5 @@ if __name__ == "__main__":
     if not os.path.isfile(model_path):
         raise ValueError('There is no pre-trained model at the specified path. Set the model path correctly or'
                          ' run training first.')
-
-    parser = argparse.ArgumentParser(description="PyTorch Object Detection Training")
-    parser.add_argument(
-        "--model-path",
-        default="",
-        metavar="FILE",
-        help="path to pre-trained model",
-        type=str,
-    )
 
     test(cfg, model_path)
